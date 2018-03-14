@@ -1,0 +1,33 @@
+//import lora and Montserrat fonts
+@import url('https://fonts.googleapis.com/css?family=Lora|Montserrat:300,400,500,700');
+
+//load variables
+@import 'abstract/variables';
+
+//load vendor
+@import 'vendor/bootstrap';
+
+//load mixins
+@import 'mixins/mixins_general';
+@import 'mixins/mixins_breakpoints';
+
+//load components
+@import "components/navigation";
+
+//load base
+@import 'base/utilities';
+@import 'base/typography';
+
+//load structure
+@import 'structure/header';
+@import 'structure/sections';
+@import 'structure/footer';
+
+
+//load pages
+@import 'pages/hero';
+@import 'pages/featured';
+@import 'pages/about';
+@import 'pages/services';
+@import 'pages/qoute';
+@import 'pages/contact';

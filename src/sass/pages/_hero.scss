@@ -1,0 +1,28 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 03 13, 18, 8:05:33 PM
+    Author     : Romart
+*/
+
+.border-double {
+    height: 20em;
+    margin: 0 auto;
+    width: em(870);
+    border: 5px solid $green-1;
+}
+.hero-text {    
+    font-family: $font-montserrat;
+    letter-spacing: 1em;
+    padding-top: em(70px);
+}
+
+.display-3 { font-size: 3rem; }
+
+.hero-title {
+    margin: .8em 0;
+    letter-spacing: .12em;
+}

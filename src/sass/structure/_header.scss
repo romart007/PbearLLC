@@ -1,0 +1,29 @@
+.top-nav {
+    background-color: $blue-3;
+    p { 
+        color: $gray-1;
+        font-size: rem(13px);
+        padding: em(10px) 0;
+    }
+    @each $top-nav in (
+    phone "\f095", 
+    fax "\f1ac" , 
+    email "\f0e0" , 
+    buzhours "\f017") {
+        .nav-#{ nth($top-nav, 1 ) }:before {
+            color: $blue-1;
+            content: "#{ nth($top-nav, 2 ) }";
+            font-family: "FontAwesome";
+            margin-right: em(10px) };
+    }
+}
+
+.header-wrapper {
+    background-image:linear-gradient(rgba(16, 16, 16, 0.5),rgba(31, 27, 29, 0.5)), url(/dist/images/f-p4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    color: $orange;
+    height: 100vh;
+}
+

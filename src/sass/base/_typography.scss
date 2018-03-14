@@ -1,0 +1,14 @@
+html, body {
+  background-color: white;
+  color: black;
+}
+
+body, input, select, textarea, button, a {
+  font-family: $font-montserrat;
+}
+
+p, address {
+    font-family: $font-lora;
+    font-size: rem(15px);
+    line-height: rem(20px);
+}

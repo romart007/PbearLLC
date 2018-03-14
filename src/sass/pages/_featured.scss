@@ -1,0 +1,10 @@
+.card { 
+    margin-top: rem(-130px);
+}
+
+.card-text { padding: em(15px); }
+
+.card-block {
+    .btn { margin-top: em(10px); }
+    a:hover { text-decoration: none;  }
+}
