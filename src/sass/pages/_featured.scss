@@ -1,10 +1,21 @@
-.card { 
-    margin-top: rem(-130px);
-}
 
-.card-text { padding: em(15px); }
+.featured {
 
-.card-block {
-    .btn { margin-top: em(10px); }
-    a:hover { text-decoration: none;  }
+    .card { margin-top: rem(-130px); } 
+
+    .card-title { 
+        color: $green-1;
+        font-weight: bold; 
+    }
+
+    .card-text { padding: em(15px); }
+
+    .card-block {
+        .btn { margin-top: em(10px); }
+        a:hover, a:focus { 
+            text-decoration: none;  
+            border: 1px solid #007bff;
+        }
+
+    }
 }

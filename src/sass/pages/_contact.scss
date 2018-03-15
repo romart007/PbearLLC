@@ -1,0 +1,37 @@
+.contact {
+
+    font-weight: bold;
+
+    .contact-intro {
+        color: $gray-1;
+        padding: em(15px) 0 em(5px);
+    }
+
+    .contact-title {
+        padding: em(15px) 0 em(30px);
+        color: $green-1;
+    }
+
+    .contact-infos {  }
+    .contact-info, address, a , p{ 
+        font-size: rem(14px);
+        font-weight: normal;
+        line-height: 1.5;
+        margin-bottom: em(15px);
+
+    }
+    a:hover {
+        text-decoration: none;
+    }
+
+}
+.callout {
+    background-color: $blue-2;
+    color: $white-1;
+}
+
+.callout-message { 
+    font-size: rem(13px); 
+    font-family: $font-montserrat;
+    letter-spacing: .3em;
+}

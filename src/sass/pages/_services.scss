@@ -1,0 +1,44 @@
+.services {
+
+    .services-title {  
+        color: $gray-1;
+        padding-bottom: rem(20px); }   
+
+    .fas { 
+        color: $blue-4;
+        font-size: em(20px); 
+    }
+
+    & .service-title {
+        color: $green-1;
+        font-weight: bold;
+        padding: em(20px);
+        text-align: left;
+    }
+
+    @each $service-title in (
+    air "\f1d8", 
+    cargo "\f0d1" , 
+    world "\f0ac" , 
+    logistic "\f07a",
+    security"\f023",
+    storage "\f1b3") {
+        .service-#{ nth($service-title, 1 ) }:before {
+            background-color: $blue-4;
+            color: $white-1;
+            content: "#{ nth($service-title, 2 ) }";
+            display: inline-block;
+            font-family: "FontAwesome";
+            font-size: em(22px); 
+            height: em(50px);
+            margin-right: em(5px) ;
+            padding: em(19px) em(18px);
+            width: em(50px);
+        }
+    }
+
+    .services-text { 
+        font-size: rem(13px);
+        margin-left: em(40px);
+        padding: 0 em(15px) em(15px) 0; }
+}
