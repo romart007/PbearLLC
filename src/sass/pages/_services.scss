@@ -1,8 +1,5 @@
 .services {
 
-    .card-block {
-
-    }
     .services-title {  
         color: $gray-1;
         padding-bottom: rem(20px); }   
@@ -18,30 +15,38 @@
         padding: em(20px);
         text-align: left;
     }
+}
 
-    @each $service-title in (
-    air "\f1d8",    
-    cargo "\f0d1" , 
-    world "\f0ac" , 
-    logistic "\f07a",
-    security"\f023",
-    storage "\f1b3") {
-        .service-#{ nth($service-title, 1 ) }:before {
-            /*background-color: $blue-4;*/
-            color: $blue-4;
-            content: "#{ nth($service-title, 2 ) }";
-            display: inline-block;
-            font-family: "FontAwesome";
-            font-size: em(30px); 
-            height: ems(40px);
-            margin-right: em(5px) ;
-            padding: em(15px) em(14px);
-            width: em(40px);            
+.featured {
+
+    margin: em(30px) 0;
+
+    .card { 
+        cursor: pointer;
+        border-width: 0 none;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12); 
+
+        &:hover { 
+            transition: .3 ease-in; 
+            box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),
+                0 6px 20px 0 rgba(0,0,0,0.19); 
+            transition: box-shadow 0.3s ease-in-out;
         }
+    } 
+
+    .card-title { 
+        color: $green-1;
+        font-weight: bold; 
     }
 
-    .services-text { 
-        font-size: rem(13px);
-        margin-left: em(40px);
-        padding: 0 em(15px) em(15px) 0; }
+    .card-text { padding: em(15px); }
+
+    .card-block {
+        .btn { margin-top: em(10px); }
+        a:hover, a:focus { 
+            text-decoration: none;  
+            border: 1px solid #007bff;
+        }
+
+    }
 }

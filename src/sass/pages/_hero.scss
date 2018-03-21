@@ -7,17 +7,14 @@ and open the template in the editor.
     Created on : 03 13, 18, 8:05:33 PM
     Author     : Romart
 */
-
+.hero {
+    padding-top: em(110px);
+}
 .border-double {
     height: 25em;
     margin: 0 auto;
     width: 80%;
     border: 5px solid $green-1;
-}
-.hero-text {    
-    font-family: $font-montserrat;
-    letter-spacing: 1em;
-    padding-top: em(50px);
 }
 
 .display-3 { font-size: 3.5rem; }

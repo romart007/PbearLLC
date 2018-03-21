@@ -1,0 +1,26 @@
+.about {
+
+    .about-info { 
+    }
+
+    .about-title {    
+        padding: em(90px) 0 em(30px) 0;
+    }
+
+    .display-4 {
+        font-family: $font-montserrat;
+        font-size: rem(25px);
+        letter-spacing: .09em;
+    } 
+    .btn { margin: em(30px); }
+
+    .img-container {
+        background-image:url(/dist/images/f-p5.jpg);
+        /*linear-gradient(rgba(16, 16, 16, 0.5),rgba(31, 27, 29, 0.5)),*/ 
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        color: $orange;
+        height: 80vh;
+    }
+}
