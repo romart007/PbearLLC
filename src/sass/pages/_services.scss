@@ -1,5 +1,8 @@
 .services {
 
+    .card-block {
+
+    }
     .services-title {  
         color: $gray-1;
         padding-bottom: rem(20px); }   
@@ -17,23 +20,23 @@
     }
 
     @each $service-title in (
-    air "\f1d8", 
+    air "\f1d8",    
     cargo "\f0d1" , 
     world "\f0ac" , 
     logistic "\f07a",
     security"\f023",
     storage "\f1b3") {
         .service-#{ nth($service-title, 1 ) }:before {
-            background-color: $blue-4;
-            color: $white-1;
+            /*background-color: $blue-4;*/
+            color: $blue-4;
             content: "#{ nth($service-title, 2 ) }";
             display: inline-block;
             font-family: "FontAwesome";
-            font-size: em(22px); 
-            height: em(50px);
+            font-size: em(30px); 
+            height: ems(40px);
             margin-right: em(5px) ;
-            padding: em(19px) em(18px);
-            width: em(50px);
+            padding: em(15px) em(14px);
+            width: em(40px);            
         }
     }
 

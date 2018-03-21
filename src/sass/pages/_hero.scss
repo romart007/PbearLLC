@@ -9,20 +9,26 @@ and open the template in the editor.
 */
 
 .border-double {
-    height: 20em;
+    height: 25em;
     margin: 0 auto;
-    width: 75%;
+    width: 80%;
     border: 5px solid $green-1;
 }
 .hero-text {    
     font-family: $font-montserrat;
     letter-spacing: 1em;
-    padding-top: em(70px);
+    padding-top: em(50px);
 }
 
-.display-3 { font-size: 3rem; }
+.display-3 { font-size: 3.5rem; }
 
 .hero-title {
     margin: .8em 0;
     letter-spacing: .12em;
+}
+.hero-slogan {
+    font-family: $font-pac;
+    font-size: rem(25px);
+    margin-top: em(-20px);
+    padding-bottom: em(50px);
 }
