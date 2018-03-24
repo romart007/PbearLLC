@@ -7,12 +7,14 @@
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <title>Polar Bear Express LLC</title>
 
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="http://expansionscollective.com/testscripts/jquery.fullPage.js"></script>
 
-
+        <link href="dist/css/main.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lora|Montserrat:300,400,500,700" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.4/css/all.css">
-        <link href="dist/css/main.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="fullpage/jquery.fullPage.css" />
     <a href="../../../../xampp/htdocs/polar/wordpress/wp-config.php"></a>
     <!-- Bootstrap -->
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -23,293 +25,314 @@
     <![endif]-->
 </head>
 <body>
-    <div class="page-wrapper" id="main">
-        <div class="top-nav container-fluid text-center">
-            <div class="row no-margin">
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                    <p class="nav-phone">800-341-0196</p>
+    <div class="page-wrapper" id="fullpage">
+        <div class="section main" id="main">
+            <div class="top-nav container-fluid text-center">
+                <div class="row no-margin">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <p class="nav-phone">800-341-0196</p>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <p class="nav-fax">989 885 5914</p>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <p class="nav-email">john@polarbearexpressllc.com</p>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <p class="nav-buzhours">9:00am - 6:00pm</p>
+                    </div>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                    <p class="nav-fax">989 885 5914</p>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                    <p class="nav-email">john@polarbearexpressllc.com</p>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                    <p class="nav-buzhours">9:00am - 6:00pm</p>
+            </div>
+            <div class="header-wrapper">
+                <nav class="container-fluid navbar fixed-top navbar-expand-md" id="menu">
+                    <a class="navbar-brand" href="#main">
+                        <img src="dist/images/PBlogo.png" alt="Brand icon" width="70">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav ml-auto">
+                            <li data-menuanchor="hero" class="nav-item active">
+                                <a class="nav-link text-uppercase scroll" href="#hero">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li data-menuanchor="About" class="nav-item">
+                                <a class="nav-link text-uppercase scroll" href="#about">About</a>
+                            </li>
+                            <li data-menuanchor="quote" class="nav-item">
+                                <a class="nav-link text-uppercase scroll" href="#quote">Get a Quote</a>
+                            </li>
+                            <li data-menuanchor="Services" class="nav-item">
+                                <a class="nav-link text-uppercase scroll" href="#services">Services</a>
+                            </li>
+                            <li data-menuanchor="Contact" class="nav-item">
+                                <a class="nav-link text-uppercase scroll" href="#contact">Contact</a>
+                            </li>
+                            <li data-menuanchor="" class="nav-item">
+                                <a class="btn btn-warning text-uppercase text-white pos-relative scroll" href="#qoute" role="button">Get a quote</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="hero mt-5" id="hero">
+                    <div class="container-fluid text-center">     
+                        <div class="border-double text-white">
+                            <h1 class="hero-title display-3 pad-top-3 text-uppercase text-shadow font-weight-bold">Polar Bear <span class="text-warning">Express LLC</span></h1>
+                            <p class="hero-slogan text-shadow">Always on the move for you</p>
+                            <a class="btn btn-success box-shadow text-uppercase" href="#" role="button">Learn more</a>                        
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <header class="header-wrapper">
-            <nav class="container-fluid navbar fixed-top navbar-expand-md">
-                <a class="navbar-brand" href="#">
-                    <img src="dist/images/PBlogo.png" alt="Brand icon" width="70">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link text-uppercase active" href="#">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-uppercase" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-uppercase" href="#">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-uppercase" href="#">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="btn btn-warning text-uppercase text-white pos-relative" href="#" role="button">Get a qoute</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            <section class="section hero mt-5" id="startchange">
-                <div class="container-fluid text-center">     
-                    <div class="border-double text-white">
-                        <h1 class="hero-title display-3 pad-top-3 text-uppercase text-shadow font-weight-bold">Polar Bear <span class="text-warning">Express LLC</span></h1>
-                        <p class="hero-slogan text-shadow">Always on the move for you</p>
-                        <a class="btn btn-success box-shadow text-uppercase" href="#" role="button">Learn more</a>                        
+        <section class="section fp-auto-height about" id="about">
+            <div class="container-fluid no-padding">
+                <div class="row no-margin ">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 no-padding">
+                        <div class="img-container">
+                        </div>
                     </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 no-padding about-info  d-flex flex-column vertical-align">
+                        <h1 class="about-title text-warning display-4 text-uppercase font-weight-bold text-center">Welcome to <br/>Polar Bear Express LLC</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+                            Cras tempor magna sapien, in pretium sem dignissim sit amet. <br>
+                            In dignissim enim sit amet ullamcorper interdum. 
+                        </p>
+                        <a class="btn btn-success box-shadow" href="#" role="button">Learn more</a>                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section home-newsletter text-white pad-top-7 pad-bottom-3" id="quote">
+            <div class="container text-center">
+                <div class="row">   
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <h2 class="home-newsletter-title text-uppercase font-weight-bold">Request a quote</h2>
+                        <i class="fas fa-truck"></i>
+                        <p class="home-newsletter-info pad-top-2 pad-bottom-3">We have wide network of offices in all major locations to help you</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Location">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="To Destination">
+                        </div> 
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Person/ Cargo">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="E-mail and number">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="form-group">
+                            <textarea class="form-control" rows="5" id="message">Message</textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pad-top-2">
+                        <a class="btn btn-success text-uppercase" href="#" role="button">Get a qoute</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section featured services text-center pad-top-5 pad-bottom-3" id="services">
+            <div class="container text-center pb-3 pt-3">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <h1 class="services-title text-uppercase font-weight-bold">Our <span class="text-success">Services</span></h1>
+                        <i class="fas fa-truck pad-bottom-2"></i>
+                        <p class="services-info pad-bottom-4">We have a wide network of offices in all major locations to help you</p>
+                    </div>
+                </div>
+                <div class="row no-gutters">
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 card-group no-padding">
+                        <div class="card">
+                            <img src="/dist/images/f-p1.jpg" alt="" class="card-img-top" width="50">
+                            <div class="card-block pad-top-2 pad-bottom-2">
+                                <h3 class="card-title text-uppercase mt-3">Dry Van</h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consect ipsum dolor sit amet, consect ipsum dolor sit amet, consect ipsum dolor sit amet, consect v</p>
+                                <a class="btn btn-link text-uppercase" href="#" role="button">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 card-group no-padding">
+                        <div class="card">
+                            <img src="/dist/images/f-p3.jpg" alt="" class="card-img-top">
+                            <div class="card-block pad-top-2 pad-bottom-2">
+                                <h3 class="card-title text-uppercase mt-3">Dedicated Trucking</h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consect ipsum dolor sit amet, consect ipsum dolor sit amet, consect ipsum dolor sit amet, consect v</p>
+                                <a class="btn btn-info text-uppercase" href="#" role="button">Read More</a>
+                            </div>
+                        </div>
+                    </div>                    
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 card-group no-padding">
+                        <div class="card">
+                            <img src="/dist/images/f-p1.jpg" alt="" class="card-img-top">
+                            <div class="card-block pad-top-2 pad-bottom-2">
+                                <h3 class="card-title text-uppercase mt-3">Less than Truckload</h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consect ipsum dolor sit amet, consect ipsum dolor sit amet, consect ipsum dolor sit amet, consect v</p>
+                                <a class="btn btn-link text-uppercase" href="#" role="button">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section contact text-center pad-top-5 pad-bottom-5" id="contact">
+            <div class="container">
+                <p class="contact-intro text-center">stay in touch</p>
+                <i class="fas fa-phone"></i>
+                <div class="row">
+                    <div class="contact-form col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                        <h2 class="contact-title text-uppercase">Send a Message</h2>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="First and Name"/>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control bfh-phone" data-format="+1 (ddd) ddd-dddd" placeholder="Phone">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control" id="select-services">
+                                <option value="0">Services</option>
+                                <option>Dry Van</option>
+                                <option>Dedecated Trucking</option>
+                                <option>LTL</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" id="textarea-services" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-success box-shadow text-uppercase" value="Submit">
+                        </div>
+                    </div>
+                    <div class="contact-details col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                        <div class="contact-details-address pad-top-3">
+                            <h3 class="contact-address-title d-inline-block">Contact Address</h3>
+                            <address>
+                                4050 W Oakley,<br>
+                                Harrison, Michigan.<br>
+                                Pincode - 48625<br>
+                                USA
+                            </address>
+                        </div>
+                        <div class="contact-map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2867.779981010303!2d-84.80209968508758!3d44.046600179109774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s4050+W+Oakley%2C+Harrison%2C+Michigan.+Pincode+-+48625+USA!5e0!3m2!1sen!2sph!4v1521633504036" 
+                                    width="400" height="210" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="section page-footer" id="footer">
+            <section class="callout" id="callout">
+                <div class="container-fluid">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12  col-sm-12 col-xs-12 d-flex justify-content-between vertical-align">
+                                <p class="callout-message text-uppercase">Don't know where to start here</p>
+                                <a class="btn btn-success text-uppercase text-white add-top add-bottom" href="#" role="button">start now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
-        </header>
-    </div>
-    <section class="section about" id="about">
-        <div class="container-fluid no-padding">
-            <div class="row no-margin ">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 no-padding">
-                    <div class="img-container">
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 no-padding about-info  d-flex flex-column vertical-align">
-                    <h1 class="about-title text-warning display-4 text-uppercase font-weight-bold text-center">Welcome to Polar Bear Express LLC</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
-                        Cras tempor magna sapien, in pretium sem dignissim sit amet. <br>
-                        In dignissim enim sit amet ullamcorper interdum. 
-                    </p>
-                    <a class="btn btn-success box-shadow" href="#" role="button">Learn more</a>                        
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="home-newsletter text-white pad-top-7 pad-bottom-3" id="qoute">
-        <div class="container text-center">
-            <div class="row">   
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <h2 class="home-newsletter-title text-uppercase font-weight-bold">Request a quote</h2>
-                    <i class="fas fa-truck"></i>
-                    <p class="home-newsletter-info pad-top-2 pad-bottom-3">We have wide network of offices in all major locations to help you</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                    <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Location">
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                    <div class="form-group">
-                        <input type="email" class="form-control" placeholder="To Destination">
-                    </div> 
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                    <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Person/ Cargo">
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                    <div class="form-group">
-                        <input type="email" class="form-control" placeholder="E-mail and number">
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="form-group">
-                        <textarea class="form-control" rows="5" id="message">Message</textarea>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pad-top-2">
-                    <a class="btn btn-success text-uppercase" href="#" role="button">Get a qoute</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section featured services text-center pad-top-5 pad-bottom-3" id="services">
-        <div class="container text-center pb-3 pt-3">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <h1 class="services-title text-uppercase font-weight-bold">Our <span class="text-success">Services</span></h1>
-                    <i class="fas fa-truck pad-bottom-2"></i>
-                    <p class="services-info pad-bottom-4">We have a wide network of offices in all major locations to help you</p>
-                </div>
-            </div>
-            <div class="row no-gutters">
-                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 card-group no-padding">
-                    <div class="card">
-                        <img src="/dist/images/f-p1.jpg" alt="" class="card-img-top" width="50">
-                        <div class="card-block pad-top-2 pad-bottom-2">
-                            <h3 class="card-title text-uppercase mt-3">Dry Van</h3>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consect ipsum dolor sit amet, consect ipsum dolor sit amet, consect ipsum dolor sit amet, consect v</p>
-                            <a class="btn btn-link text-uppercase" href="#" role="button">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 card-group no-padding">
-                    <div class="card">
-                        <img src="/dist/images/f-p3.jpg" alt="" class="card-img-top">
-                        <div class="card-block pad-top-2 pad-bottom-2">
-                            <h3 class="card-title text-uppercase mt-3">Dedicated Trucking</h3>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consect ipsum dolor sit amet, consect ipsum dolor sit amet, consect ipsum dolor sit amet, consect v</p>
-                            <a class="btn btn-info text-uppercase" href="#" role="button">Read More</a>
-                        </div>
-                    </div>
-                </div>                    
-                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 card-group no-padding">
-                    <div class="card">
-                        <img src="/dist/images/f-p1.jpg" alt="" class="card-img-top">
-                        <div class="card-block pad-top-2 pad-bottom-2">
-                            <h3 class="card-title text-uppercase mt-3">Less than Truckload</h3>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consect ipsum dolor sit amet, consect ipsum dolor sit amet, consect ipsum dolor sit amet, consect v</p>
-                            <a class="btn btn-link text-uppercase" href="#" role="button">Read More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section contact text-center pad-top-5 pad-bottom-5">
-        <div class="container">
-            <p class="contact-intro text-center">stay in touch</p>
-            <i class="fas fa-phone"></i>
-            <div class="row">
-                <div class="contact-form col-lg-7 col-md-7 col-sm-12 col-xs-12">
-                    <h2 class="contact-title text-uppercase">Send a Message</h2>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="First and Name"/>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control bfh-phone" data-format="+1 (ddd) ddd-dddd" placeholder="Phone">
-                    </div>
-                    <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Email">
-                    </div>
-                    <div class="form-group">
-                        <select class="form-control" id="select-services">
-                            <option value="0">Services</option>
-                            <option>Dry Van</option>
-                            <option>Dedecated Trucking</option>
-                            <option>LTL</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <textarea class="form-control" id="textarea-services" rows="3"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <input type="submit" class="btn btn-success box-shadow text-uppercase" value="Submit">
-                    </div>
-                </div>
-                <div class="contact-details col-lg-5 col-md-5 col-sm-12 col-xs-12">
-                    <div class="contact-details-address pad-top-3">
-                        <h3 class="contact-address-title d-inline-block">Contact Address</h3>
-                        <address>
-                            4050 W Oakley,<br>
-                            Harrison, Michigan.<br>
-                            Pincode - 48625<br>
-                            USA
-                        </address>
-                    </div>
-                    <div class="contact-map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2867.779981010303!2d-84.80209968508758!3d44.046600179109774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s4050+W+Oakley%2C+Harrison%2C+Michigan.+Pincode+-+48625+USA!5e0!3m2!1sen!2sph!4v1521633504036" 
-                                width="400" height="210" frameborder="0" style="border:0" allowfullscreen></iframe>
-                    </div>
-                </div>
-                </section>
-                <section class="callout">
-                    <div class="container-fluid">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-12 col-md-12  col-sm-12 col-xs-12 d-flex justify-content-between vertical-align">
-                                    <p class="callout-message text-uppercase">Don't know where to start here</p>
-                                    <a class="btn btn-success text-uppercase text-white add-top add-bottom" href="#" role="button">start now</a>
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="footer-info pad-top-5">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <h3 class="footer-about-title text-uppercase text-white pad-bottom-2">About us</h3>
+                                <div class="footer-logo text-white">
+                                    <a href="">
+                                        <img src="dist/images/PBlogo.png" alt="Brand icon" width="90">
+                                    </a>
                                 </div>
+                                <p class="footer-about-info text-white">Lorem ipsum dolor sit amet sectetuer esl adipiscing
+                                    elit sed diam nonummy nibhi euismod tincidunt ut 
+                                    laoreet dolore amet magna Vero eos et accusamus 
+                                    et iusto odio dignissimos ducimus.</p>
                             </div>
-                        </div>
-                    </div>
-                </section>
-                <footer class="page-footer">
-                    <div class="container-fluid">
-                        <div class="container">
-                            <div class="footer-info pad-top-5">
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                        <h3 class="footer-about-title text-uppercase text-white pad-bottom-2">About us</h3>
-                                        <div class="footer-logo text-white">
-                                            <a href="">
-                                                <img src="dist/images/PBlogo.png" alt="Brand icon" width="90">
-                                            </a>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-white">
+                                <h3 class="contact-news-title text-uppercase pad-bottom-2">Newsletter subscribe</h3>
+                                <p class="contact-news-info pad-bottom-2">If you want receive our all weekly updates about new 
+                                    offers and discount, signup below If you want receive offers 
+                                    and discount our all weekly updates about new offers and 
+                                    discount signup below.</p>
+                                <form action="">
+                                    <div class="input-group mb-3">
+                                        <input type="email" class="form-control" placeholder="Email" aria-label="email" aria-describedby="basic-addon2">
+                                        <div class="input-group-append">                                            
+                                            <span class="input-group-text " id="basic-text1"><i class="far fa-paper-plane" aria-hidden="true"></i></span>
                                         </div>
-                                        <p class="footer-about-info text-white">Lorem ipsum dolor sit amet sectetuer esl adipiscing
-                                            elit sed diam nonummy nibhi euismod tincidunt ut 
-                                            laoreet dolore amet magna Vero eos et accusamus 
-                                            et iusto odio dignissimos ducimus.</p>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-white">
-                                        <h3 class="contact-news-title text-uppercase pad-bottom-2">Newsletter subscribe</h3>
-                                        <p class="contact-news-info pad-bottom-2">If you want receive our all weekly updates about new 
-                                            offers and discount, signup below If you want receive offers 
-                                            and discount our all weekly updates about new offers and 
-                                            discount signup below.</p>
-                                        <form action="">
-                                            <div class="input-group mb-3">
-                                                <input type="email" class="form-control" placeholder="Email" aria-label="email" aria-describedby="basic-addon2">
-                                                <div class="input-group-append">                                            
-                                                    <span class="input-group-text " id="basic-text1"><i class="far fa-paper-plane" aria-hidden="true"></i></span>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                                <div class="row pad-bottom-2 pad-top-3">
-                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 add-top-2">
-                                        <ul class="footer-menu d-flex">
-                                            <li class="footer-menu-items add-right-2">
-                                                <a href="">home</a>
-                                            </li>
-                                            <li class="footer-menu-items add-right-2">
-                                                <a href="">about</a>
-                                            </li>
-                                            <li class="footer-menu-items add-right-2">
-                                                <a href="">services</a>
-                                            </li>
-                                            <li class="footer-menu-items add-right-2">
-                                                <a href="">contact</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 add-top-2">
-                                        <p class="footer-copyright">All Copyright reserved@2018 - Design by LabBoss</p>
-                                    </div>
-                                </div>
+                                </form>
                             </div>
                         </div>
-                </footer>
+                        <div class="row pad-bottom-2 pad-top-3">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 add-top-2">
+                                <ul class="footer-menu d-flex">
+                                    <li class="footer-menu-items add-right-2">
+                                        <a href="#main">home</a>
+                                    </li>
+                                    <li class="footer-menu-items add-right-2">
+                                        <a href="#about">about</a>
+                                    </li>
+                                    <li class="footer-menu-items add-right-2">
+                                        <a href="#services">services</a>
+                                    </li>
+                                    <li class="footer-menu-items add-right-2">
+                                        <a href="#contact">contact</a>
+                                    </li> 
+                                </ul>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 add-top-2">
+                                <p class="footer-copyright">All Copyright reserved@2018 - Design by LabBoss</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
 
 
 
 
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
-                <!-- Optional JavaScript -->
-                <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-                <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-                <script src="navbar-bg.js"></script>
-                </body>
-                </html>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
+    <!--<script src="vendors/jquery.easings.min.js"></script>-->
+
+
+    <!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
+    <!--<script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>-->
+
+    <script type="text/javascript" src="/fullpage/jquery.fullPage.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="navbar-bg.js"></script>
+</body>
+</html>

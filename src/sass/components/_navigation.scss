@@ -9,8 +9,14 @@
         text-transform: uppercase;
         font-size: .8rem;
 
-        &.active { color: $blue-1; }
+
     }
+}
+.navbar-nav li a:hover,
+.navbar-nav li.active a {
+    background-color: $gray-1;
+    color: $blue-1 !important;
+    width: 100%;
 }
 
 
