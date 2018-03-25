@@ -1,18 +1,16 @@
 .navbar-brand { margin-left: 108px; }
+.fixed-top { top: em(30px); }
 .navbar-collapse { margin-right: 103px; }
 .nav-link { color: $white-1; }
 .nav-item {
     .btn { top: -2px;} 
 
     a {
-        margin-left: 2.5em;
         text-transform: uppercase;
         font-size: .8rem;
-
-
     }
 }
-.navbar-nav li a:hover,
+
 .navbar-nav li.active a {
     background-color: $gray-1;
     color: $blue-1 !important;
