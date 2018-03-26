@@ -26,7 +26,7 @@
 </head>
 <body>
     <div class="page-wrapper" id="fullpage">
-        <div class="section main" id="main">
+        <div class="main" id="main">
             <div class="top-nav container-fluid text-center">
                 <div class="row no-margin">
                     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
@@ -46,13 +46,13 @@
             <div class="header-wrapper">
                 <nav class="container-fluid navbar fixed-top navbar-expand-md" id="menu">
                     <a class="navbar-brand" href="#main">
-                        <img src="dist/images/PBlogo.png" alt="Brand icon" width="70">
+                        <img src="dist/images/pblogo5.png" alt="Brand icon" width="70">
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                        <ul class="navbar-nav ml-auto">
+                        <ul class="navbar-nav ml-auto d-flex vertical-align">
                             <li data-menuanchor="hero" class="nav-item active">
                                 <a class="nav-link text-uppercase scroll" href="#hero">Home <span class="sr-only">(current)</span></a>
                             </li>
@@ -65,11 +65,19 @@
                             <li data-menuanchor="Services" class="nav-item">
                                 <a class="nav-link text-uppercase scroll" href="#services">Services</a>
                             </li>
-                            <li data-menuanchor="Contact" class="nav-item">
+                            <li data-menuanchor="Contact" class="nav-item mr-3">
                                 <a class="nav-link text-uppercase scroll" href="#contact">Contact</a>
                             </li>
-                            <li data-menuanchor="" class="nav-item">
-                                <a class="btn btn-warning text-uppercase text-white pos-relative scroll" href="#qoute" role="button">Get a quote</a>
+                            <li data-menuanchor="" class="nav-item ">
+                                <form action="">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search. . .">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-success" type="button">Go</button>
+                                        </span>
+
+                                    </div>
+                                </form>
                             </li>
                         </ul>
                     </div>
@@ -79,21 +87,23 @@
                         <div class="border-double text-white">
                             <h1 class="hero-title display-3 pad-top-3 text-uppercase text-shadow font-weight-bold">Polar Bear <span class="text-warning">Express LLC</span></h1>
                             <p class="hero-slogan text-shadow">Always on the move for you</p>
-                            <a class="btn btn-success box-shadow text-uppercase" href="#" role="button">Learn more</a>                        
+                            <a class="btn btn-success box-shadow text-uppercase scroll" href="#quote" role="button">Request a quote</a>                        
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <section class="section fp-auto-height about" id="about">
+        <section class="section about" id="about">
             <div class="container-fluid no-padding">
                 <div class="row no-margin ">
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 no-padding">
                         <div class="img-container">
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 no-padding about-info  d-flex flex-column vertical-align">
-                        <h1 class="about-title text-warning display-4 text-uppercase font-weight-bold text-center">Welcome to <br/>Polar Bear Express LLC</h1>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 no-padding about-info  d-flex flex-column vertical-align pos-relative">
+
+                        <h1 class="about-title display-4 text-uppercase font-weight-bold text-center">About <br/><span class=" text-warning">Polar Bear Express LLC</span></h1>
+                        <i class="fas fa-truck"></i>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
                             Cras tempor magna sapien, in pretium sem dignissim sit amet. <br>
                             In dignissim enim sit amet ullamcorper interdum. 
@@ -103,11 +113,11 @@
                 </div>
             </div>
         </section>
-        <section class="section home-newsletter text-white pad-top-7 pad-bottom-3" id="quote">
+        <section class="section home-newsletter text-white pad-bottom-3" id="quote">
             <div class="container text-center">
                 <div class="row">   
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <h2 class="home-newsletter-title text-uppercase font-weight-bold">Request a quote</h2>
+                        <h2 class="home-newsletter-title text-uppercase font-weight-bold pad-top-3">Request a quote</h2>
                         <i class="fas fa-truck"></i>
                         <p class="home-newsletter-info pad-top-2 pad-bottom-3">We have wide network of offices in all major locations to help you</p>
                     </div>
@@ -148,7 +158,7 @@
                 </div>
             </div>
         </section>
-        <section class="section featured services text-center pad-top-5 pad-bottom-3" id="services">
+        <section class="section featured services text-center pad-bottom-3" id="services">
             <div class="container text-center pb-3 pt-3">
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -191,7 +201,7 @@
                 </div>
             </div>
         </section>
-        <section class="section contact text-center pad-top-5 pad-bottom-5" id="contact">
+        <section class="section contact text-center " id="contact">
             <div class="container">
                 <p class="contact-intro text-center">stay in touch</p>
                 <i class="fas fa-phone"></i>
@@ -240,19 +250,19 @@
                 </div>
             </div>
         </section>
-        <footer class="section page-footer" id="footer">
-            <section class="callout" id="callout">
-                <div class="container-fluid">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-12 col-md-12  col-sm-12 col-xs-12 d-flex justify-content-between vertical-align">
-                                <p class="callout-message text-uppercase">Don't know where to start here</p>
-                                <a class="btn btn-success text-uppercase text-white add-top add-bottom" href="#" role="button">start now</a>
-                            </div>
+        <section class="callout" id="callout">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12  col-sm-12 col-xs-12 d-flex justify-content-between vertical-align">
+                            <p class="callout-message text-uppercase">Don't know where to start here</p>
+                            <a class="btn btn-success text-uppercase text-white add-top add-bottom scroll" href="#qoute" role="button">start now</a>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
+        <footer class="page-footer" id="footer">
             <div class="container-fluid">
                 <div class="container">
                     <div class="footer-info pad-top-5">
@@ -261,7 +271,7 @@
                                 <h3 class="footer-about-title text-uppercase text-white pad-bottom-2">About us</h3>
                                 <div class="footer-logo text-white">
                                     <a href="">
-                                        <img src="dist/images/PBlogo.png" alt="Brand icon" width="90">
+                                        <img src="dist/images/pblogo1.png" alt="Brand icon" width="90">
                                     </a>
                                 </div>
                                 <p class="footer-about-info text-white">Lorem ipsum dolor sit amet sectetuer esl adipiscing

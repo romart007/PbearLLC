@@ -25,5 +25,9 @@ input[type="text"] { font-size: rem(12px); }
 }
 
 .footer-menu-items a:hover { text-decoration: none; }
-.footer-copyright { letter-spacing: .1em; }
+.footer-copyright { 
+    color: $gray-1;
+    font-size: rem(11px);
+    letter-spacing: .1em; 
+}
 

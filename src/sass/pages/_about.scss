@@ -3,8 +3,11 @@
     .about-info { 
     }
 
+    .about-main {  z-index: 2; }
+
     .about-title {    
-        padding: em(90px) 0 em(30px) 0;
+        color: $gray-1;
+        padding: em(45px) 0 em(10px) 0;       
     }
 
     .display-4 {
@@ -12,6 +15,13 @@
         font-size: rem(25px);
         letter-spacing: .09em;
     } 
+
+    .fas {
+        color: $gray-1;
+        font-size: 1.25em;
+        text-align: center;
+        padding-bottom: em(30px);
+    }
     .btn { margin: em(30px); }
 
     .img-container {
@@ -21,6 +31,11 @@
         background-size: cover;
         background-position: center center;
         color: $orange;
-        height: 80vh;
+        margin: 0 auto;
+        height: 60vh;
+        width: 80%;
     }
 }
+
+.section { padding-bottom: em(128px); }
+
