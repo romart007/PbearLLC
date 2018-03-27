@@ -1,6 +1,6 @@
 .services {
 
-    .services-title {  
+    .services-main-title {  
         color: $gray-1;
         padding-bottom: rem(20px); }   
 
@@ -9,17 +9,10 @@
         font-size: em(20px); 
     }
 
-    & .service-title {
-        color: $green-1;
-        font-weight: bold;
-        padding: em(20px);
-        text-align: left;
-    }
-}
-
 .featured {
 
     margin: em(30px) 0;
+    
 
     .card { 
         cursor: pointer;
@@ -32,11 +25,29 @@
                 0 6px 20px 0 rgba(0,0,0,0.19); 
             transition: box-shadow 0.3s ease-in-out;
         }
-    } 
+
+        &:hover .card-title {
+            color: $green-1;
+            display: block;
+            font-weight: bold; 
+            left: 143px;
+            position: absolute;
+            top: 126px;  
+        }
+        
+        &:hover .card-img-top { 
+            opacity: .9; }  
+    }
+
+    .card-img-top {
+        padding-top: em(20px);
+        width: 60%;
+        text-align: center;
+        margin: 0 auto;
+    }
 
     .card-title { 
-        color: $green-1;
-        font-weight: bold; 
+        display: none;
     }
 
     .card-text { padding: em(15px); }

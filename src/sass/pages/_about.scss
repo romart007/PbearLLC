@@ -25,17 +25,30 @@
     .btn { margin: em(30px); }
 
     .img-container {
-        background-image:url(/dist/images/f-p5.jpg);
+        background-image:url(/dist/images/f-p6.jpg);
         /*linear-gradient(rgba(16, 16, 16, 0.5),rgba(31, 27, 29, 0.5)),*/ 
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
-        color: $orange;
         margin: 0 auto;
         height: 60vh;
         width: 80%;
+        position: relative;
+        z-index: 2;
     }
+}
+
+.square { 
+    bottom:-15px;
+    right: 35px;
+    background-color: $gray-2;
+    height: 60vh;
+    width: 80%;
+    position: absolute;
 }
 
 .section { padding-bottom: em(128px); }
 
+.box-shadow {
+    
+}

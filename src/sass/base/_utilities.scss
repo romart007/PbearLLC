@@ -379,13 +379,3 @@ button { border-radius: 0; }
 }
 
 .section { padding-top: em(128px); }
-
-.shape {
-    color: $blue-1;
-    content: "\f28d";
-    font-family: FontAwesome;
-    font-weight: normal;
-    font-size: 100px;
-    position: absolute;
-    transform: rotate(45deg);
-}
