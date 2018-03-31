@@ -1,10 +1,10 @@
 .contact {
-
     font-weight: bold;
+    margin-bottom: -5px;
 
-    .contact-intro {
-        color: $gray-1;
-        padding: em(15px) 0 em(5px);
+    .contact-title {
+        padding: em(5px) 0 em(15px) 0;
+        color: $green-1;
     }
 
     .fas { 
@@ -12,26 +12,76 @@
         font-size: em(20px); 
     }
 
-    .contact-title {
-        padding: em(15px) 0 em(30px);
-        color: $green-1;
+    .contact-intro {
+        color: #3f4c6b;
+        padding: em(15px) 0 em(5px);
+    }   
+
+    .contact-details-address {
+        background-color: $gray-1;
     }
 
-    .contact-infos {  }
-    .contact-info, address, a , p{ 
+    .contact-form {
+        position: absolute;
+        top: 60px;
+        left: 45px;
+    }
+
+    .form-control {
+        background-color: transparent;
+        border: 1px solid $green-1; //#28a745
+    }
+    .contact-details {
+        opacity: .85;
+        position: absolute;
+        right: 142px;
+        text-align: center;        
+        top: 168px;
+    }
+
+    address, p { 
         font-size: rem(14px);
         font-weight: normal;
+        letter-spacing: .1em;
         line-height: 1.5;
         margin-bottom: em(15px);
+        text-align: left;
+        padding-left: 83px;
+    }
 
+    textarea { height: rem(60px); }
+
+    .social-links { margin-top: -159px; }
+
+    @each $social-links in (
+    linkedin-in #0D84C8,
+    google-plus-g #E8654C,
+    facebook-f #537CBE
+    ) {
+        .fa-#{ nth($social-links, 1) } {
+            background:#{ nth($social-links, 2) };
+            border-radius: 50%;
+            color: white;
+            line-height: 30px;
+            margin: 0 236px 15px 0;
+            height: 30px;
+            width: 30px;
+        }
     }
-    a:hover {
-        text-decoration: none;
-    }
+
+    a:hover { opacity:.7; }
+
+
 
 }
 .callout {
-    background-color: $blue-2;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3f4c6b+0,3f4c6b+100;Blue+Grey+Flat */
+    background: rgb(63,76,107); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(63,76,107,1) 0%, rgba(63,76,107,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(63,76,107,1) 0%,rgba(63,76,107,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(63,76,107,1) 0%,rgba(63,76,107,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f4c6b', endColorstr='#3f4c6b',GradientType=0 ); /* IE6-9 */
+
     color: $white-1;
 }
 
@@ -40,3 +90,13 @@
     font-family: $font-montserrat;
     letter-spacing: .3em;
 }
+
+.section.contact { padding-bottom: 0; }
+
+
+.contact-address-title { 
+    color: $blue-3;
+    padding-top: em(35px); 
+    padding-bottom: em(20px);
+}
+

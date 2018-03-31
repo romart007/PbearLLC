@@ -379,3 +379,31 @@ button { border-radius: 0; }
 }
 
 .section { padding-top: em(128px); }
+
+.card-container  {
+    perspective: 600;
+    position: relative;
+}
+
+.rotate {
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    transition: all 3s ease-in-out;
+}
+.card .side {
+    backface-visibility: hidden;
+    border-radius: 6px;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+}
+.card .back {
+    background: #eaeaed;
+    color: #0087cc;
+    line-height: 150px;
+    text-align: center;
+    transform: rotateY(180deg);
+}

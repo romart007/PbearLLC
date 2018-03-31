@@ -49,6 +49,17 @@
 
 .section { padding-bottom: em(128px); }
 
-.box-shadow {
-    
+.modal-dialog { top: 10%; }
+.modal-header { 
+    padding-top: em(30px);
+    padding-bottom: 0;
+
+    .close {  margin-right: 17px; }
+
+    .fas { color: $blue-1; }
+    .modal-title { 
+        font-weight: bold;
+        margin-left: em(15px); 
+    }
+
 }

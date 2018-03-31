@@ -6,28 +6,29 @@
     background-position: center;
     /* background by SVGBackgrounds.com */
 
+
+
+    .footer-info { opacity: .8; }
+
+    .footer-about-info, .contact-news-info,
+    .footer-menu-items, .footer-copyright,
+    input[type="text"] { font-size: rem(12px); }
+
+    .input-group-text {
+        background-color: rgb(40, 167, 69);
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgb(40, 167, 69);
+        color: $white-1;
+        cursor: pointer;
+
+    }
+
+    .footer-menu-items a:hover { text-decoration: none; }
+    .footer-copyright { 
+        color: $gray-1;
+        font-size: rem(11px);
+        letter-spacing: .1em; 
+    }
+
 }
-
-.footer-info { opacity: .8; }
-
-.footer-about-info, .contact-news-info,
-.footer-menu-items, .footer-copyright,
-input[type="text"] { font-size: rem(12px); }
-
-.input-group-text {
-    background-color: rgb(40, 167, 69);
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgb(40, 167, 69);
-    color: $white-1;
-    cursor: pointer;
-    
-}
-
-.footer-menu-items a:hover { text-decoration: none; }
-.footer-copyright { 
-    color: $gray-1;
-    font-size: rem(11px);
-    letter-spacing: .1em; 
-}
-

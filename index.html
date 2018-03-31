@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <title>Polar Bear Express LLC</title>
-
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <!--<script type="text/javascript" src="http://expansionscollective.com/testscripts/jquery.fullPage.js"></script>-->
 
@@ -45,7 +45,7 @@
             </div>
             <div class="header-wrapper">
                 <nav class="container-fluid navbar fixed-top navbar-expand-md" id="menu">
-                    <a class="navbar-brand" href="#main">
+                    <a class="navbar-brand scroll" href="#main">
                         <img src="dist/images/pblogo1.png" alt="Brand icon" width="70">
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -73,9 +73,11 @@
                                     <div class="input-group">
                                         <input type="text" class="form-control" placeholder="Search. . .">
                                         <span class="input-group-btn">
-                                            <button class="btn btn-success" type="button">Go</button>
+                                            <button class="btn btn-success text-uppercase pos-relative" type="button">
+                                                <!--<i class="fas fa-search"></i>-->
+                                                <img src="dist/images/search.svg" alt="search icon" width="15">
+                                            </button>
                                         </span>
-
                                     </div>
                                 </form>
                             </li>
@@ -87,7 +89,7 @@
                         <div class="border-double text-white">
                             <h1 class="hero-title display-3 pad-top-3 text-uppercase text-shadow font-weight-bold">Polar Bear <span class="text-warning">Express LLC</span></h1>
                             <p class="hero-slogan text-shadow">Always on the move for you</p>
-                            <a class="btn btn-success box-shadow text-uppercase scroll" href="#quote" role="button">Request a quote</a>                        
+                            <a class="btn btn-success box-shadow text-uppercase scroll" href="#contact" role="button">Book Appointment</a>                        
                         </div>
                     </div>
                 </div>
@@ -110,8 +112,49 @@
                             Cras tempor magna sapien, in pretium sem dignissim sit amet. <br>
                             In dignissim enim sit amet ullamcorper interdum. 
                         </p>
-                        <a class="btn btn-success box-shadow" href="#" role="button">Learn more</a>                        
+                        <a class="btn btn-success box-shadow" href="#about" role="button" data-toggle="modal" data-target="#myModal">Learn more</a>                        
                     </div>
+
+                    <!-----------------------------------------------modal------------------------>
+                    <div class="container">
+                        <h2>Modal Example</h2>
+                        <!-- Trigger the modal with a button -->
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal" role="dialog">
+                            <div class="modal-dialog">
+
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <i class="fas fa-exclamation-circle"></i>
+                                        <h4 class="modal-title text-center">ABOUT POLAR BEAR EXPRESS LLC</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                            Cras tempor magna sapien, in pretium sem dignissim sit amet. 
+                                            In dignissim enim sit amet ullamcorper interdum.</p>
+                                        <br>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                            Cras tempor magna sapien, in pretium sem dignissim sit amet. 
+                                            In dignissim enim sit amet ullamcorper interdum.</p>
+                                        <br>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                            Cras tempor magna sapien, in pretium sem dignissim sit amet. 
+                                            In dignissim enim sit amet ullamcorper interdum.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <!--                                        <button type="button" class="btn btn-success text-uppercase" data-dismiss="modal">
+                                                                                    Book now</button>-->
+                                        <a class="btn btn-success text-uppercase text-white add-top add-bottom scroll" data-dismiss="modal" href="#contact" role="button">book appointment</a>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-----------------------------------------------modal------------------------>
                 </div>
             </div>
         </section>
@@ -127,17 +170,17 @@
                 <div class="row">
                     <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
                         <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Location">
+                            <input type="text" class="form-control" placeholder="Location">
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
                         <div class="form-group">
-                            <input type="email" class="form-control" placeholder="To Destination">
+                            <input type="text" class="form-control" placeholder="To Destination">
                         </div> 
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
                         <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Person/ Cargo">
+                            <input type="text" class="form-control" placeholder="Person/ Cargo">
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
@@ -170,48 +213,52 @@
                     </div>
                 </div>
                 <div class="row no-gutters">
-                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 card-group no-padding">
-                        <div class="card">
+                    <div class="card-container col-lg-4 col-md-4 col-sm-12 col-xs-12 card-group no-padding">
+                        <div class="card card-1">
                             <img src="/dist/images/van.png" alt="dry van" width="10" class="card-img-top" >
                             <div class="card-block pad-top-2 pad-bottom-2">
                                 <h3 class="card-title text-uppercase">Dry Van</h3>
                                 <p class="card-text">Lorem ipsum dolor sit amet, consect ipsum dolor sit amet, consect ipsum dolor sit amet, consect ipsum dolor sit amet, consect v</p>
-                                <a class="btn btn-link text-uppercase" href="#" role="button">Read More</a>
+                                <a class="btn btn-link btn-read-1 text-uppercase" href="#1" role="button">Read More</a>
                             </div>
                         </div>
+
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 card-group no-padding">
-                        <div class="card">
+                    <div class="card-container col-lg-4 col-md-4 col-sm-12 col-xs-12 card-group no-padding">
+                        <div class="card card-2">
                             <img src="/dist/images/truck.png" alt="" class="card-img-top">
                             <div class="card-block pad-top-2 pad-bottom-2">
                                 <h3 class="card-title text-uppercase">Dedicated</h3>
                                 <p class="card-text">Lorem ipsum dolor sit amet, consect ipsum dolor sit amet, consect ipsum dolor sit amet, consect ipsum dolor sit amet, consect v</p>
-                                <a class="btn btn-info text-uppercase" href="#" role="button">Read More</a>
+                                <a class="btn btn-info btn-read text-uppercase" href="#1" role="button">Read More</a>
                             </div>
                         </div>
                     </div>                    
-                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 card-group no-padding">
-                        <div class="card ">
+                    <div class="card-container col-lg-4 col-md-4 col-sm-12 col-xs-12 card-group no-padding">
+                        <div class="card card-3">
                             <img src="/dist/images/ltl.png" alt="" class="card-img-top">
                             <div class="card-block pad-top-2 pad-bottom-2">
                                 <h3 class="card-title text-uppercase">Less than</h3>
                                 <p class="card-text">Lorem ipsum dolor sit amet, consect ipsum dolor sit amet, consect ipsum dolor sit amet, consect ipsum dolor sit amet, consect v</p>
-                                <a class="btn btn-link text-uppercase" href="#" role="button">Read More</a>
+                                <a class="btn btn-link btn-read text-uppercase" href="#1" role="button">Read More</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="section contact text-center " id="contact">
-            <div class="container">
-                <p class="contact-intro text-center">stay in touch</p>
-                <i class="fas fa-phone"></i>
+        <section class="section contact text-center" id="contact">
+            <div class="container-fluid pos-relative no-padding">
+                <div class="map">
+                    <iframe src="https://snazzymaps.com/embed/60457" width="100%" height="530vh" style="border:none;"></iframe>
+                </div>
                 <div class="row">
-                    <div class="contact-form col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                    <div class="contact-form col-lg-5 col-md-5 col-sm-12 col-xs-12">
                         <h2 class="contact-title text-uppercase">Send a Message</h2>
+                        <i class="fas fa-phone"></i>
+                        <p class="contact-intro text-center">Get in touch</p>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="First and Name"/>
+                            <input type="text" class="form-control" placeholder="Name"/>
                         </div>
                         <div class="form-group">
                             <input type="text" class="form-control bfh-phone" data-format="+1 (ddd) ddd-dddd" placeholder="Phone">
@@ -234,9 +281,9 @@
                             <input type="submit" class="btn btn-success box-shadow text-uppercase" value="Submit">
                         </div>
                     </div>
-                    <div class="contact-details col-lg-5 col-md-5 col-sm-12 col-xs-12">
-                        <div class="contact-details-address pad-top-3">
-                            <h3 class="contact-address-title d-inline-block">Contact Address</h3>
+                    <div class="contact-details col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <div class="contact-details-address pad-top-3 pad-bottom-2">
+                            <h3 class="contact-address-title">Contact Address</h3>
                             <address>
                                 4050 W Oakley,<br>
                                 Harrison, Michigan.<br>
@@ -244,9 +291,16 @@
                                 USA
                             </address>
                         </div>
-                        <div class="contact-map">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2867.779981010303!2d-84.80209968508758!3d44.046600179109774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s4050+W+Oakley%2C+Harrison%2C+Michigan.+Pincode+-+48625+USA!5e0!3m2!1sen!2sph!4v1521633504036" 
-                                    width="400" height="210" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        <div class="social-links d-flex flex-column">
+                            <a class="" href="https://plus.google.com/discover" target="_blank">
+                                <i class="fab fa-google-plus-g"></i>
+                            </a>
+                            <a class="" href="https://www.linkedin.com/" target="_blank">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a class="" href="https://www.facebook.com/" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -258,7 +312,7 @@
                     <div class="row">
                         <div class="col-lg-12 col-md-12  col-sm-12 col-xs-12 d-flex justify-content-between vertical-align">
                             <p class="callout-message text-uppercase">Don't know where to start here</p>
-                            <a class="btn btn-success text-uppercase text-white add-top add-bottom scroll" href="#qoute" role="button">start now</a>
+                            <a class="btn btn-success text-uppercase text-white add-top add-bottom scroll" href="#quote" role="button">start now</a>
                         </div>
                     </div>
                 </div>
@@ -272,7 +326,7 @@
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                 <h3 class="footer-about-title text-uppercase text-white pad-bottom-2">About us</h3>
                                 <div class="footer-logo text-white">
-                                    <a href="">
+                                    <a class="scroll" href="#main">
                                         <img src="dist/images/pblogo1.png" alt="Brand icon" width="90">
                                     </a>
                                 </div>
@@ -301,16 +355,16 @@
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 add-top-2">
                                 <ul class="footer-menu d-flex">
                                     <li class="footer-menu-items add-right-2">
-                                        <a href="#main">home</a>
+                                        <a class="text-uppercase scroll" href="#main">home</a>
                                     </li>
                                     <li class="footer-menu-items add-right-2">
-                                        <a href="#about">about</a>
+                                        <a class="text-uppercase scroll" href="#about">about</a>
+                                    </li>
+                                    <li class="text-uppercase footer-menu-items add-right-2">
+                                        <a class="text-uppercase scroll" href="#services">services</a>
                                     </li>
                                     <li class="footer-menu-items add-right-2">
-                                        <a href="#services">services</a>
-                                    </li>
-                                    <li class="footer-menu-items add-right-2">
-                                        <a href="#contact">contact</a>
+                                        <a class="text-uppercase scroll" href="#contact">contact</a>
                                     </li> 
                                 </ul>
                             </div>
@@ -340,11 +394,9 @@
     <!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
     <!--<script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>-->
 
-    <script type="text/javascript" src="/fullpage/jquery.fullPage.js"></script>
-
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="navbar-bg.js"></script>
+    <script src="flip.js"></script>
 </body>
 </html>

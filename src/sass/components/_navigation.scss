@@ -1,51 +1,54 @@
-.navbar-brand { margin-left: 108px; }
-.fixed-top { top: em(30px); }
-.navbar-collapse { margin-right: 103px; }
-.nav-link { color: $white-1; }
-.nav-item {
-    .btn { top: -2px;} 
+.main {
+    .navbar-brand { margin-left: 108px; }
+    .fixed-top { top: em(30px); }
+    .navbar-collapse { margin-right: 103px; }
+    .nav-item {
 
-    a {
-        text-transform: uppercase;
-        font-size: .8rem;
-    }
-}
-
-.navbar-nav li.active a {
-    border-bottom: 1px solid $blue-1;
-    color: $blue-1 !important;
-    width: 100%;
-}
-
-
-.nav-item:last-child {
-
-    margin-left: em(10px);
-
-    .form-control { 
-        background-color: transparent; 
-
-        &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-            color: $white-1;
-        }
-        &::-moz-placeholder { /* Firefox 19+ */
-            color: $white-1;
-        }
-        &:-ms-input-placeholder { /* IE 10+ */
-            color: $white-1;
-        }
-        &:-moz-placeholder { /* Firefox 18- */
-            color: $white-1;
+        margin-right: em(20px);
+        a {
+            text-transform: uppercase;
+            font-size: .8rem;
         }
     }
+    
+    .btn img { margin-bottom: -1px; }
+    
+    .navbar-nav li.active a {
+        border-bottom: 1px solid $blue-1;
+        color: $blue-1 !important;
+        margin-bottom: -1px;
+        width: 100%;
+    }
+
+    .navbar-expand-md .navbar-nav .nav-link { 
+        color: $white-1;
+        padding-left: 0;
+        padding-right: 0;
+
+    }
+
+    .nav-item:last-child {
+
+        margin-left: em(10px);
+
+        .form-control { 
+            background-color: transparent; 
+
+            &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+                color: $white-1;
+            }
+            &::-moz-placeholder { /* Firefox 19+ */
+                color: $white-1;
+            }
+            &:-ms-input-placeholder { /* IE 10+ */
+                color: $white-1;
+            }
+            &:-moz-placeholder { /* Firefox 18- */
+                color: $white-1;
+            }
+        }
+
+    }
+    input[type="text"] { font-size: rem(12px); }
 
 }
-/*.md-form {
-    margin: auto em(-40px) auto 2em;
-    height: auto;
-    width: 50%;
-
-    &:focus { 
-        border: 0 none;
-        outline: 0 none; }
-}*/
