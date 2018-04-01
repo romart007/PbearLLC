@@ -183,6 +183,8 @@
     font-size: rem(13px); 
     font-family: $font-montserrat;
     letter-spacing: .3em;
+    
+    @include media-breakpoint-only(xs) { font-size: rem(11px); }
 }
 
 .section.contact { padding-bottom: 0; }
