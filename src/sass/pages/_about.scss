@@ -14,6 +14,7 @@
         font-family: $font-montserrat;
         font-size: rem(25px);
         letter-spacing: .09em;
+
     } 
 
     .fas {
@@ -36,30 +37,60 @@
         position: relative;
         z-index: 2;
     }
-}
 
-.square { 
-    bottom:-15px;
-    right: 35px;
-    background-color: $gray-2;
-    height: 60vh;
-    width: 80%;
-    position: absolute;
-}
 
-.section { padding-bottom: em(128px); }
-
-.modal-dialog { top: 10%; }
-.modal-header { 
-    padding-top: em(30px);
-    padding-bottom: 0;
-
-    .close {  margin-right: 17px; }
-
-    .fas { color: $blue-1; }
-    .modal-title { 
-        font-weight: bold;
-        margin-left: em(15px); 
+    .square { 
+        bottom:-15px;
+        right: 35px;
+        background-color: $gray-2;
+        height: 60vh;
+        width: 80%;
+        position: absolute;
     }
 
+    .section { padding-bottom: em(128px); }
+
+    .modal-dialog { top: 10%; }
+    .modal-header { 
+        padding-top: em(30px);
+        padding-bottom: 0;
+
+        .close {  margin-right: 17px; }
+
+        .fas { color: $blue-1; }
+        .modal-title { 
+            font-weight: bold;
+            margin-left: em(15px); 
+        }
+
+    }
+    @include media-breakpoint-only(xs) {
+
+        .img-container {
+            height: 50vh;
+            width: 85%;
+        }
+        .square { 
+            height: 50vh;
+            width: 90%;
+            right: 5px;
+            top: 15px;
+        }
+        .display-4 { font-size: rem(18px);  }
+
+        .about-text {    
+            text-align: center;
+            font-size: 15px;
+            margin: 0 10px; 
+        }
+    }
+
+    @include media-breakpoint-only(md) {
+        .display-4 { font-size: rem(18px); }
+    }
+    @include media-breakpoint-only(lg) {
+        .img-container, .square { height: 50vh; }
+
+        .about-title { padding: 2em 0 .625em 0; }
+    }
 }

@@ -9,7 +9,7 @@ $(document).ready(function(){
           $(".navbar").css('background-color','#0B0928');
           $(".fixed-top").css('top', '36px');
           $(".fixed-top").css('opacity', '.9');
-          $(".top-nav").css('z-index' , '1030');
+          $(".top-nav").css('z-index' , '1040');
           $(".top-nav").css('position','fixed');
 
        } else {
@@ -33,7 +33,18 @@ $(document).ready(function() {
       scrollTop: $(this.hash).offset().top
     }, 1000 );
   });
-  
+
+  //background color change
+  $( ".navbar-toggler" ).click(function() {
+  $(".navbar").css('background-color','#0B0928');
+  $(".navbar").css('opacity', '.8');
+  })
+
+
+  $('.js-scroll-trigger').click(function() {
+    $('.navbar-collapse').collapse('hide');
+  });
+
   // Active link switching
   $(window).scroll(function() {
     var scrollbarLocation = $(this).scrollTop();

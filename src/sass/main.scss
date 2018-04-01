@@ -24,11 +24,12 @@
 @import 'structure/header';
 @import 'structure/sections';
 @import 'structure/footer';
-
+@import 'structure/responsive';
 
 //load pages
 @import 'pages/hero';
 @import 'pages/about';
 @import 'pages/services';
 @import 'pages/qoute';
-@import 'pages/contact'
+@import 'pages/contact';
+

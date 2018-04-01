@@ -25,11 +25,17 @@
         position: absolute;
         top: 60px;
         left: 45px;
+
+        @include media-breakpoint-only(xs) { 
+            left: 2px; }
+
+        @include media-breakpoint-only(sm) { 
+            left: 1px; }
     }
 
     .form-control {
         background-color: transparent;
-        border: 1px solid $green-1; //#28a745
+        border: 1px solid $green-1; 
     }
     .contact-details {
         opacity: .85;
@@ -37,6 +43,31 @@
         right: 142px;
         text-align: center;        
         top: 168px;
+
+        @include media-breakpoint-only(xs) {
+            right: 0;
+            top: 531px;
+        }
+
+        @include media-breakpoint-only(sm) {
+            right: 0;
+            top: 531px;
+        }
+
+        @include media-breakpoint-only(md) {
+            right: 25px;
+            top: 139px;
+        }
+
+        @include media-breakpoint-only(lg) {
+            right: 25px;
+            top: 139px;
+        }
+
+        @include media-breakpoint-only(xl) {
+            right: 40px;
+            top: 139px;
+        }
     }
 
     address, p { 
@@ -72,6 +103,68 @@
     a:hover { opacity:.7; }
 
 
+    .contact-address-title { 
+        color: $blue-3;
+        padding-top: em(35px); 
+        padding-bottom: em(20px);
+    }
+
+
+    @include media-breakpoint-only(xs) { 
+        iframe {
+            height: 130vh;
+        }
+
+        .contact p { text-align: center;
+                     padding-left: 0; }
+    }
+
+    @include media-breakpoint-only(sm) { 
+        iframe {
+            height: 120vh;
+        }
+
+        .contact address, .contact p { 
+            text-align: center;
+            padding-left: 0; 
+        }
+    }
+
+    @include media-breakpoint-only(md) {
+        .col-md-3 {
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 25%;
+            flex: 0 0 45%;
+            max-width: 46%;
+        }
+    }
+
+    @include media-breakpoint-only(lg) {
+        .col-md-3 {
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 25%;
+            flex: 0 0 40%;
+            max-width: 40%;
+        }
+
+        address { 
+            padding-left: 0;
+            text-align: center; }
+    }
+
+    @include media-breakpoint-only(xl) {
+        .col-md-3 {
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 40%;
+            flex: 0 0 40%;
+            max-width: 40%;
+        }
+
+        address { 
+            padding-left: 0;
+            text-align: center; }
+    }
+
 
 }
 .callout {
@@ -83,6 +176,7 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f4c6b', endColorstr='#3f4c6b',GradientType=0 ); /* IE6-9 */
 
     color: $white-1;
+    margin-bottom: -1px;
 }
 
 .callout-message { 
@@ -92,11 +186,4 @@
 }
 
 .section.contact { padding-bottom: 0; }
-
-
-.contact-address-title { 
-    color: $blue-3;
-    padding-top: em(35px); 
-    padding-bottom: em(20px);
-}
 

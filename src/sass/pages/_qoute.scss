@@ -17,11 +17,13 @@
         textarea, input[type=text], input[type=email] {
             background-color: transparent;
             border-color: $green-1;
-            
+
             &:focus {
                 border-color: transparent;
             }
         }
     }
-
+    @include media-breakpoint-only(sm) {
+        .btn { margin-top: -15px; }
+    }
 }

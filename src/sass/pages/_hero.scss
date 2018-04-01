@@ -9,23 +9,67 @@ and open the template in the editor.
 */
 .hero {
     padding-top: em(170px);
-}
-.border-double {
-    height: 25em;
-    margin: 0 auto;
-    width: 80%;
-    border: 5px solid $green-1;
-}
 
-.display-3 { font-size: 3.5rem; }
+    @include media-breakpoint-only(md) {
+        padding-top: 18.625em; 
 
-.hero-title {
-    margin: .8em 0;
-    letter-spacing: .12em;
-}
-.hero-slogan {
-    font-family: $font-pac;
-    font-size: rem(25px);
-    margin-top: em(-20px);
-    padding-bottom: em(50px);
+    }
+
+    .border-double {
+        height: 25em;
+        margin: 0 auto;
+        width: 83.9%;
+        border: 5px solid $green-1;
+    }
+
+    .display-3 { font-size: 3.5rem; }
+
+    .hero-title {
+        margin: .8em 0;
+        letter-spacing: .12em;
+    }
+    .hero-slogan {
+        font-family: $font-pac;
+        font-size: rem(25px);
+        margin-top: em(-20px);
+        padding-bottom: em(50px);
+    }
+
+
+    @include media-breakpoint-only(xs) {
+        .display-3 { font-size: 1.8rem; }
+
+        .hero-title.pad-top-4 { padding-top: 20px !important; } 
+
+        .hero-slogan {
+            font-family: $font-pac;
+            font-size: rem(15px);
+        }
+
+        .border-double {
+            height: 11em;
+            width: 90.9%;
+        }
+
+        .btn { margin-top: 20px; }
+    }
+
+    @include media-breakpoint-only(sm) {
+
+        .display-3 { font-size: 3rem; }
+
+        .hero-title { letter-spacing: 0.10em; }
+    }
+
+    @include media-breakpoint-only(lg) {
+
+        .hero .border-double { height: 26em; }
+
+        .display-3 { font-size: 3.6rem; }
+
+        .hero-slogan { 
+            margin-top: -1.2em; 
+            padding-bottom: 2.125em;
+        } 
+    }
 }

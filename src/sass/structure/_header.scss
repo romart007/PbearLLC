@@ -4,20 +4,58 @@
         color: $gray-1;
         font-size: rem(13px);
         padding: em(10px) 0;
+
+        &.time { margin-right: 15px; }
     }
-    @each $top-nav in (
+    @each $top-nav  in (
     phone "\f095", 
     fax "\f1ac" , 
     email "\f0e0" , 
-    buzhours "\f017") {
+    time "\f017") {
         .nav-#{ nth($top-nav, 1 ) }:before {
             color: $blue-1;
             content: "#{ nth($top-nav, 2 ) }";
             font-family: "FontAwesome";
             margin-right: em(10px) };
     }
-}
+    @include media-breakpoint-only(xs) { 
+        .col-xs-6 { width: 50%; }
 
+        p { 
+            font-size: rem(10px); 
+            text-align: left;
+            padding: 0.15em 0;
+        }
+        .nav-fax, .nav-time { 
+            padding-left: 39px;
+        }
+    }
+    
+    @include media-breakpoint-only(sm) {
+
+        p.nav-phone:before, p.nav-time:before { 
+            font-size: rem(25px); 
+            padding: 1.20em 0 1.18em 0;
+        }
+        p.nav-email:before, p.nav-fax:before { 
+            padding: 1.20em 0 1.18em 0;
+            font-size: rem(23px); }
+
+        span { display: none; }
+    }
+
+    @include media-breakpoint-only(md) {
+        .col-md-3 {
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 21%;
+            flex: 0 0 21%;
+            max-width: 21%;
+        }
+        
+        .sm-margin-offset { margin-right: em(90px); }
+
+    }
+}
 .header-wrapper {
 
     margin-top: -48px;
@@ -27,5 +65,10 @@
     background-position: bottom center;
     color: $orange;
     height: 110vh;
+
+
+    @include media-breakpoint-only(xs) {
+        height: 90vh;
+    }
 }
 
