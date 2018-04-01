@@ -79,6 +79,10 @@
             padding-top: em(10px);
         }
 
+        .nav-item { padding-bottom: em(30px); }
+
+        .nav-link { font-size: rem(17px); }
+
         .fixed-top { top: em(48px); }
 
         .navbar-collapse { margin-right: 0; }  
@@ -98,8 +102,11 @@
         .fixed-top { top: 40px !important; }
 
         .navbar-nav li.active a { border-bottom: 0; }
+        
+        
+        .nav-item { padding-bottom: em(30px); }
 
-        .nav-item { margin-bottom: em(15px); }
+        .nav-link { font-size: rem(18px); }
 
         .navbar-collapse { margin-right: 0; }  
 
@@ -109,8 +116,11 @@
     }
 
     @include media-breakpoint-only(md) { 
-        .nav-item { margin-bottom: em(18px); }
+        
+        .nav-item { margin-bottom: em(30px); }
 
+        .nav-link { font-size: rem(18px); }
+        
         .navbar-brand { margin-left: 0; }
 
         .navbar-collapse { margin-right: 0; }  
