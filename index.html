@@ -320,7 +320,7 @@
                 <div class="container">
                     <div class="footer-info pad-top-5">
                         <div class="row">
-                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 pad-bottom-2">
                                 <h3 class="footer-about-title text-uppercase text-white pad-bottom-2">About us</h3>
                                 <div class="footer-logo text-white">
                                     <a class="scroll" href="#main">
@@ -393,7 +393,73 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="navbar-bg.js"></script>
-    <script src="flip.js"></script>
+    <!--<script src="navbar-bg.js"></script>-->
+    <!--<script src="flip.js"></script>-->
+    <script>
+        $(document).ready(function () {
+            var scroll_start = 0;
+            var startchange = $('#hero');
+            var offset = startchange.offset();
+            if (startchange.length) {
+                $(document).scroll(function () {
+                    scroll_start = $(this).scrollTop();
+                    if (scroll_start > offset.top) {
+                        $(".navbar").css('background-color', '#0B0928');
+                        $(".fixed-top").css('top', '36px');
+                        $(".fixed-top").css('opacity', '.9');
+                        $(".top-nav").css('z-index', '1040');
+                        $(".top-nav").css('position', 'fixed');
+
+                    } else {
+                        $('.navbar').css('background-color', 'transparent');
+                        $(".fixed-top").css('top', '36px');
+                        $(".top-nav").css('position', 'fixed');
+                    }
+                });
+            }
+        });
+
+
+        $(document).ready(function () {
+
+            var scrollLink = $('.scroll');
+
+            // Smootqh scrolling
+            scrollLink.click(function (e) {
+                e.preventDefault();
+                $('body,html').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1000);
+            });
+
+            //background color change
+            $(".navbar-toggler").click(function () {
+                $(".navbar").css('background-color', '#0B0928');
+                $(".navbar").css('opacity', '.8');
+            })
+
+
+            $('.js-scroll-trigger').click(function () {
+                $('.navbar-collapse').collapse('hide');
+            });
+
+            // Active link switching
+            $(window).scroll(function () {
+                var scrollbarLocation = $(this).scrollTop();
+
+                scrollLink.each(function () {
+
+                    var sectionOffset = $(this.hash).offset().top - 20;
+
+                    if (sectionOffset <= scrollbarLocation) {
+                        $(this).parent().addClass('active');
+                        $(this).parent().siblings().removeClass('active');
+                    }
+                })
+
+            })
+
+        })
+    </script>
 </body>
 </html>
