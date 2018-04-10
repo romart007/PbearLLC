@@ -1,3 +1,16 @@
+label.error {
+    color: green;
+    font-size: rem(11px);
+    text-align: left;
+    padding-top: 5px;    
+}
+
+#success_message, #error_message { 
+    font-size: rem(12px); 
+    text-align: right;
+    margin-left: em(15px);
+}
+
 .contact {
     font-weight: bold;
     margin-bottom: -5px;
@@ -27,7 +40,8 @@
         left: 45px;
 
         @include media-breakpoint-only(xs) { 
-            left: 2px; }
+            left: 2px; 
+        }
 
         @include media-breakpoint-only(sm) { 
             left: 1px; }
@@ -46,12 +60,12 @@
 
         @include media-breakpoint-only(xs) {
             right: 0;
-            top: 531px;
+            top: 600px;
         }
 
         @include media-breakpoint-only(sm) {
             right: 0;
-            top: 531px;
+            top: 600px;
         }
 
         @include media-breakpoint-only(md) {
@@ -76,8 +90,7 @@
         letter-spacing: .1em;
         line-height: 1.5;
         margin-bottom: em(15px);
-        text-align: left;
-        padding-left: 83px;
+        text-align: center;
     }
 
     textarea { height: rem(60px); }
@@ -107,6 +120,10 @@
         color: $blue-3;
         padding-top: em(35px); 
         padding-bottom: em(20px);
+
+        @include media-breakpoint-only(xs) { 
+            margin-left: -40px;
+        }
     }
 
 
@@ -122,11 +139,6 @@
     @include media-breakpoint-only(sm) { 
         iframe {
             height: 120vh;
-        }
-
-        .contact address, .contact p { 
-            text-align: center;
-            padding-left: 0; 
         }
     }
 
@@ -183,7 +195,7 @@
     font-size: rem(13px); 
     font-family: $font-montserrat;
     letter-spacing: .3em;
-    
+
     @include media-breakpoint-only(xs) { font-size: rem(11px); }
 }
 
