@@ -58,6 +58,7 @@ label.error {
         text-align: center;        
         top: 168px;
 
+
         @include media-breakpoint-only(xs) {
             right: 0;
             top: 600px;
@@ -126,6 +127,11 @@ label.error {
         }
     }
 
+    @media (min-width: 320px) and (max-width: 370px) { 
+        iframe {
+            height: 150vh !important;
+        }
+    }
 
     @include media-breakpoint-only(xs) { 
         iframe {
