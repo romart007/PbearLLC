@@ -1,61 +1,61 @@
-$(document).ready(function(){       
+jQuery(document).ready(function(){       
    var scroll_start = 0;
-   var startchange = $('#hero');
+   var startchange = jQuery('#hero');
    var offset = startchange.offset();
     if (startchange.length){
-   $(document).scroll(function() { 
-      scroll_start = $(this).scrollTop();
+   jQuery(document).scroll(function() { 
+      scroll_start = jQuery(this).scrollTop();
       if(scroll_start > offset.top) {
-          $(".navbar").css('background-color','#0B0928');
-          $(".fixed-top").css('top', '36px');
-          $(".fixed-top").css('opacity', '.9');
-          $(".top-nav").css('z-index' , '1040');
-          $(".top-nav").css('position','fixed');
+          jQuery(".navbar").css('background-color','#0B0928');
+          jQuery(".fixed-top").css('top', '36px');
+          jQuery(".fixed-top").css('opacity', '.9');
+          jQuery(".top-nav").css('z-index' , '1040');
+          jQuery(".top-nav").css('position','fixed');
 
        } else {
-          $('.navbar').css('background-color', 'transparent');
-          $(".fixed-top").css('top', '36px');
-          $(".top-nav").css('position','fixed');
+          jQuery('.navbar').css('background-color', 'transparent');
+          jQuery(".fixed-top").css('top', '36px');
+          jQuery(".top-nav").css('position','fixed');
        }
    });
     }
 });
 
 
-$(document).ready(function() {
+jQuery(document).ready(function() {
   
-  var scrollLink = $('.scroll');
+  var scrollLink = jQuery('.scroll');
   
   // Smootqh scrolling
   scrollLink.click(function(e) {
     e.preventDefault();
-    $('body,html').animate({
-      scrollTop: $(this.hash).offset().top
+    jQuery('body,html').animate({
+      scrollTop: jQuery(this.hash).offset().top
     }, 1000 );
   });
 
   //background color change
-  $( ".navbar-toggler" ).click(function() {
-  $(".navbar").css('background-color','#0B0928');
-  $(".navbar").css('opacity', '.8');
+  jQuery( ".navbar-toggler" ).click(function() {
+  jQuery(".navbar").css('background-color','#0B0928');
+  jQuery(".navbar").css('opacity', '.8');
   })
 
 
-  $('.js-scroll-trigger').click(function() {
-    $('.navbar-collapse').collapse('hide');
+  jQuery('.js-scroll-trigger').click(function() {
+    jQuery('.navbar-collapse').collapse('hide');
   });
 
   // Active link switching
-  $(window).scroll(function() {
-    var scrollbarLocation = $(this).scrollTop();
+  jQuery(window).scroll(function() {
+    var scrollbarLocation = jQuery(this).scrollTop();
     
     scrollLink.each(function() {
       
-      var sectionOffset = $(this.hash).offset().top - 20;
+      var sectionOffset = jQuery(this.hash).offset().top - 20;
       
       if ( sectionOffset <= scrollbarLocation ) {
-        $(this).parent().addClass('active');
-        $(this).parent().siblings().removeClass('active');
+        jQuery(this).parent().addClass('active');
+        jQuery(this).parent().siblings().removeClass('active');
       }
     })
     
